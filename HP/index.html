@@ -105,6 +105,35 @@
 
         /* フッター */
         footer { background: #333; color: #fff; text-align: center; padding: 20px; margin-top: 60px; font-size: 0.9rem; }
+
+        /* 📱 スマホ（画面幅が狭い端末）用の調整 */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column; /* ロゴとメニューを上下2段に分ける */
+                padding: 15px 10px;
+                height: auto; /* 高さを自動調整に */
+            }
+
+            .logo {
+                margin-bottom: 15px;
+                font-size: 1.5rem;
+                text-align: center;
+                width: 100%;
+            }
+
+            header nav {
+                display: flex;
+                flex-wrap: wrap; /* 入りきらないメニューを自動で折り返す */
+                justify-content: center;
+                gap: 12px; /* メニュー同士の間隔 */
+                width: 100%;
+            }
+
+            header nav a {
+                font-size: 0.9rem; /* 文字をスマホ用に少し小さく */
+                margin: 0 !important; /* 余計な隙間をリセット */
+            }
+        }
     </style>
 </head>
 <body>
