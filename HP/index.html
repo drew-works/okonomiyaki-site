@@ -106,7 +106,12 @@
         /* フッター */
         footer { background: #333; color: #fff; text-align: center; padding: 20px; margin-top: 60px; font-size: 0.9rem; }
 
-        /* 📱 スマホ（画面幅が狭い端末）用の調整 */
+        /* 💡 パソコンの時は、スマホ用の改行タグを非表示にする（1行にする） */
+        .sp-only {
+            display: none;
+        }
+
+        /* 📱 スマホ（画面幅が768px以下）用の調整 */
         @media (max-width: 768px) {
             /* 1. ヘッダーを上下2段にして、文字が潰れるのを防ぐ */
             header {
@@ -135,34 +140,17 @@
                 margin: 0 !important;
             }
 
-            /* 💡 パソコンの時は、スマホ用の改行タグを非表示にする（1行にする） */
-        .sp-only {
-            display: none;
-        }
-
-        /* 📱 スマホ用の調整 */
-        @media (max-width: 768px) {
-            /* スマホの時だけ改行を有効にする */
+            /* 2. スマホの時だけ改行タグ（br）を有効にする */
             .sp-only {
-                display: inline;
+                display: inline !important;
             }
 
-            /* 文字サイズと折り返しの微調整 */
+            /* 3. メインの文字を「狙った場所（br）」だけで改行させ、綺麗な2行にする */
             .hero-content h1 {
-                font-size: 1.8rem !important; /* 文字を少し小さくして幅に余裕を持たせる */
-                line-height: 1.5 !important;
-                white-space: nowrap !important; /* 勝手な場所で自動折り返しさせない */
+                font-size: 1.6rem !important; /* 文字サイズを少しだけコンパクトに */
+                line-height: 1.5 !important;   /* 行間をちょうどよく */
+                white-space: nowrap !important; /* 画面幅による「勝手な自動折り返し」を絶対に禁止する */
                 max-width: 100% !important;
-            }
-        }
-
-            /* 2. メインの文字を少し小さくして、気持ちよく2行に収める */
-            .hero-content h1 {
-                font-size: 1.8rem !important; /* パソコン時より文字を小さく */
-                line-height: 1.4 !important; /* 行間をちょうどよく */
-                white-space: normal !important; /* 自動で折り返す設定 */
-                word-break: keep-all !important; /* 単語の途中で変に切れないようにする */
-                max-width: 90% !important; /* 画面の端にぶつからないよう余白を作る */
                 margin: 0 auto 15px auto !important;
             }
         }
