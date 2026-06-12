@@ -135,6 +135,27 @@
                 margin: 0 !important;
             }
 
+            /* 💡 パソコンの時は、スマホ用の改行タグを非表示にする（1行にする） */
+        .sp-only {
+            display: none;
+        }
+
+        /* 📱 スマホ用の調整 */
+        @media (max-width: 768px) {
+            /* スマホの時だけ改行を有効にする */
+            .sp-only {
+                display: inline;
+            }
+
+            /* 文字サイズと折り返しの微調整 */
+            .hero-content h1 {
+                font-size: 1.8rem !important; /* 文字を少し小さくして幅に余裕を持たせる */
+                line-height: 1.5 !important;
+                white-space: nowrap !important; /* 勝手な場所で自動折り返しさせない */
+                max-width: 100% !important;
+            }
+        }
+
             /* 2. メインの文字を少し小さくして、気持ちよく2行に収める */
             .hero-content h1 {
                 font-size: 1.8rem !important; /* パソコン時より文字を小さく */
@@ -166,7 +187,7 @@
         <div class="slide slide3"></div>
         
         <div class="hero-content">
-            <h1>アツアツの鉄板で、<br>最高のひとときを。</h1>
+            <h1>アツアツの鉄板で、<br class="sp-only">最高のひとときを。</h1>
             <p>創業〇〇年、こだわり抜いた生地と秘伝のソース</p>
             <p style="background: #d32f2f; color: white; padding: 5px 15px; border-radius: 20px; font-size: 1rem; margin-top: 15px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: inline-block;">
                 📍 代々木上原駅から徒歩30秒！
