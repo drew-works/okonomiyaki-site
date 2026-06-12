@@ -114,6 +114,14 @@
         /* 📱 スマホ（画面幅が768px以下）用の調整 */
         @media (max-width: 768px) {
             /* 1. ヘッダーを上下2段にして、文字が潰れるのを防ぐ */
+            /* 💡 パソコンの時は、スマホ用の改行タグを非表示にする（1行にする） */
+        .sp-only {
+            display: none;
+        }
+
+        /* 📱 スマホ（画面幅が768px以下）用の調整 */
+        @media (max-width: 768px) {
+            /* 1. ヘッダーを上下2段にして、文字が潰れるのを防ぐ */
             header {
                 flex-direction: column;
                 padding: 12px 10px;
@@ -147,12 +155,13 @@
 
             /* 3. メインの文字を「狙った場所（br）」だけで改行させ、綺麗な2行にする */
             .hero-content h1 {
-                font-size: 1.6rem !important; /* 文字サイズを少しだけコンパクトに */
-                line-height: 1.5 !important;   /* 行間をちょうどよく */
+                font-size: 1.45rem !important; /* 💡スマホの画面幅にすっぽり収まるサイズに調整しました！ */
+                line-height: 1.6 !important;   /* 行間を少し広げて読みやすく */
                 white-space: nowrap !important; /* 画面幅による「勝手な自動折り返し」を絶対に禁止する */
                 max-width: 100% !important;
                 margin: 0 auto 15px auto !important;
             }
+        }
         }
     </style>
 </head>
