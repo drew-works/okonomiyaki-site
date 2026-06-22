@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おしながき - ごきらく亭【公式】</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f6f0; color: #333; line-height: 1.6; }
+        header { background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05); padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #d32f2f; text-decoration: none; }
+        .back-home { text-decoration: none; color: #555; font-weight: bold; font-size: 0.95rem; }
+        .back-home:hover { color: #d32f2f; }
+
+        .container { max-width: 800px; margin: 30px auto; padding: 0 20px; padding-bottom: 60px; }
+        h1 { text-align: center; color: #d32f2f; margin-bottom: 10px; font-size: 2rem; }
+        .menu-lead { text-align: center; color: #666; margin-bottom: 40px; font-size: 1rem; }
+
+        /* カテゴリの見出し */
+        .category-title { background: #d32f2f; color: white; padding: 10px 20px; font-size: 1.3rem; border-radius: 6px; margin-top: 40px; margin-bottom: 20px; font-weight: bold; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        
+        /* リストスタイル */
+        .menu-list { background: #fff; border-radius: 8px; padding: 10px 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.05); }
+        .menu-item { display: flex; justify-content: space-between; align-items: baseline; padding: 12px 0; border-bottom: 1px dotted #ddd; }
+        .menu-item:last-child { border-bottom: none; }
+        .item-name { font-weight: bold; font-size: 1.05rem; color: #222; }
+        
+        /* 💰 価格エリアの設定 */
+        .item-price { font-weight: bold; color: #333; font-size: 1.05rem; white-space: nowrap; margin-left: 15px; }
+        
+        /* 💡 税込価格の薄いフォント設定 */
+        .tax-included { color: #888; font-size: 0.9rem; font-weight: normal; margin-left: 5px; }
+
+        .note-text { font-size: 0.85rem; color: #777; margin-top: 5px; font-weight: normal; line-height: 1.4; }
+
+        footer { background: #333; color: #fff; text-align: center; padding: 20px; font-size: 0.9rem; }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 1.7rem; }
+            .category-title { font-size: 1.15rem; padding: 8px 15px; }
+            .item-name { font-size: 0.95rem; }
+            .item-price { font-size: 0.95rem; }
+            .tax-included { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">ごきらく亭</a>
+        <a href="index.html" class="back-home">⬅ トップページへ戻る</a>
+    </header>
+
+    <div class="container">
+        <h1>おしながき一覧</h1>
+        <p class="menu-lead">ごきらく亭自慢の全メニューです。価格は「税抜き（税込）」表記となっております。</p>
+
+        <!-- 1. お好み焼き -->
+        <div class="category-title">お好み焼き</div>
+        <div class="menu-list">
+            <div class="menu-item"><span class="item-name">紅しょうが天</span><span class="item-price">810円<span class="tax-included">(891円)</span></span></div>
+            <div class="menu-item"><span class="item-name">桜エビ天</span><span class="item-price">860円<span class="tax-included">(946円)</span></span></div>
+            <div class="menu-item"><span class="item-name">納豆天</span><span class="item-price">880円<span class="tax-included">(968円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ねぎ天</span><span class="item-price">880円<span class="tax-included">(968円)</span></span></div>
+            <div class="menu-item"><span class="item-name">切イカ天</span><span class="item-price">920円<span class="tax-included">(1,012円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ツナ天</span><span class="item-price">920円<span class="tax-included">(1,012円)</span></span></div>
+            <div class="menu-item"><span class="item-name">豚天</span><span class="item-price">920円<span class="tax-included">(1,012円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ギョーザ天</span><span class="item-price">920円<span class="tax-included">(1,012円)</span></span></div>
+            <div class="menu-item"><span class="item-name">牛天 (和牛)</span><span class="item-price">990円<span class="tax-included">(1,089円)</span></span></div>
+            <div class="menu-item"><span class="item-name">三色天<div class="note-text">桜エビ・切イカ・紅しょうが</div></span><span class="item-price">990円<span class="tax-included">(1,089円)</span></span></div>
+            <div class="menu-item"><span class="item-name">長ネギ天 (ちぢみ風)</span><span class="item-price">990円<span class="tax-included">(1,089円)</span></span></div>
+            <div class="menu-item"><span class="item-name">タコ天</span><span class="item-price">1,020円<span class="tax-included">(1,122円)</span></span></div>
+            <div class="menu-item"><span class="item-name">生イカ天</span><span class="item-price">1,020円<span class="tax-included">(1,122円)</span></span></div>
+            <div class="menu-item"><span class="item-name">生エビ天</span><span class="item-price">1,020円<span class="tax-included">(1,122円)</span></span></div>
+            <div class="menu-item"><span class="item-name">豚ネギ天</span><span class="item-price">1,020円<span class="tax-included">(1,122円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ピザ天</span><span class="item-price">1,060円<span class="tax-included">(1,166円)</span></span></div>
+            <div class="menu-item"><span class="item-name">カレー天</span><span class="item-price">1,060円<span class="tax-included">(1,166円)</span></span></div>
+            <div class="menu-item"><span class="item-name">明太子天</span><span class="item-price">1,160円<span class="tax-included">(1,276円)</span></span></div>
+            <div class="menu-item"><span class="item-name">豚キムチ天</span><span class="item-price">1,180円<span class="tax-included">(1,298円)</span></span></div>
+            <div class="menu-item"><span class="item-name">しらす梅天<div class="note-text">しらす・梅・大葉・ネギ</div></span><span class="item-price">1,180円<span class="tax-included">(1,298円)</span></span></div>
+            <div class="menu-item"><span class="item-name">モチチーズねぎ天</span><span class="item-price">1,180円<span class="tax-included">(1,298円)</span></span></div>
+            <div class="menu-item"><span class="item-name">カープ天 (広島風)<div class="note-text">※キムチ 又は 切イカ</div></span><span class="item-price">1,190円<span class="tax-included">(1,309円)</span></span></div>
+            <div class="menu-item"><span class="item-name">カキ天 (シーズン)</span><span class="item-price">1,200円<span class="tax-included">(1,320円)</span></span></div>
+            <div class="menu-item"><span class="item-name">豚チーズダブル天</span><span class="item-price">1,240円<span class="tax-included">(1,364円)</span></span></div>
+            <div class="menu-item"><span class="item-name">牛スジ天</span><span class="item-price">1,380円<span class="tax-included">(1,518円)</span></span></div>
+            <div class="menu-item"><span class="item-name">MIX天<div class="note-text">牛・豚・コーン</div></span><span class="item-price">1,560円<span class="tax-included">(1,716円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ごきらく天<div class="note-text">タコ・イカ・あさり・エビ</div></span><span class="item-price">1,560円<span class="tax-included">(1,716円)</span></span></div>
+            <div class="menu-item"><span class="item-name">シーフードピザ天</span><span class="item-price">1,560円<span class="tax-included">(1,716円)</span></span></div>
+            <div class="menu-item"><span class="item-name">スタミナ天 (大盛)<div class="note-text">ニンニク・ニラ・牛・豚・切イカ・紅しょうが</div></span><span class="item-price">1,680円<span class="tax-included">(1,848円)</span></span></div>
+        </div>
+
+        <!-- 2. もんじゃ焼き -->
+        <div class="category-title">もんじゃ焼き・リゾットもんじゃ</div>
+        <div class="menu-list">
+            <div class="menu-item"><span class="item-name">紅しょうがもんじゃ</span><span class="item-price">810円<span class="tax-included">(891円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ベビースターもんじゃ</span><span class="item-price">870円<span class="tax-included">(957円)</span></span></div>
+            <div class="menu-item"><span class="item-name">納豆もんじゃ</span><span class="item-price">880円<span class="tax-included">(968円)</span></span></div>
+            <div class="menu-item"><span class="item-name">コーンもんじゃ</span><span class="item-price">880円<span class="tax-included">(968円)</span></span></div>
+            <div class="menu-item"><span class="item-name">そばもんじゃ</span><span class="item-price">880円<span class="tax-included">(968円)</span></span></div>
+            <div class="menu-item"><span class="item-name">切イカもんじゃ</span><span class="item-price">920円<span class="tax-included">(1,012円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ツナもんじゃ</span><span class="item-price">920円<span class="tax-included">(1,012円)</span></span></div>
+            <div class="menu-item"><span class="item-name">キムチもんじゃ</span><span class="item-price">920円<span class="tax-included">(1,012円)</span></span></div>
+            <div class="menu-item"><span class="item-name">チーズもんじゃ</span><span class="item-price">920円<span class="tax-included">(1,012円)</span></span></div>
+            <div class="menu-item"><span class="item-name">生イカもんじゃ</span><span class="item-price">1,020円<span class="tax-included">(1,122円)</span></span></div>
+            <div class="menu-item"><span class="item-name">生エビもんじゃ</span><span class="item-price">1,020円<span class="tax-included">(1,122円)</span></span></div>
+            <div class="menu-item"><span class="item-name">タコもんじゃ</span><span class="item-price">1,020円<span class="tax-included">(1,122円)</span></span></div>
+            <div class="menu-item"><span class="item-name">塩辛もんじゃ</span><span class="item-price">1,020円<span class="tax-included">(1,122円)</span></span></div>
+            <div class="menu-item"><span class="item-name">もちチーズもんじゃ</span><span class="item-price">1,050円<span class="tax-included">(1,155円)</span></span></div>
+            <div class="menu-item"><span class="item-name">カレーもんじゃ</span><span class="item-price">1,080円<span class="tax-included">(1,188円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ツナチーズもんじゃ</span><span class="item-price">1,160円<span class="tax-included">(1,276円)</span></span></div>
+            <div class="menu-item"><span class="item-name">明太子もんじゃ</span><span class="item-price">1,160円<span class="tax-included">(1,276円)</span></span></div>
+            <div class="menu-item"><span class="item-name">激辛もんじゃ</span><span class="item-price">1,180円<span class="tax-included">(1,298円)</span></span></div>
+            <div class="menu-item"><span class="item-name">カレーうどんもんじゃ</span><span class="item-price">1,190円<span class="tax-included">(1,309円)</span></span></div>
+            <div class="menu-item"><span class="item-name">もちチーズせんべいもんじゃ</span><span class="item-price">1,190円<span class="tax-included">(1,309円)</span></span></div>
+            <div class="menu-item"><span class="item-name">もち明太子もんじゃ</span><span class="item-price">1,370円<span class="tax-included">(1,507円)</span></span></div>
+            <div class="menu-item"><span class="item-name">イタリアンもんじゃ<div class="note-text">トマト・バジル・チーズ・バター</div></span><span class="item-price">1,370円<span class="tax-included">(1,507円)</span></span></div>
+            <div class="menu-item"><span class="item-name">明太チーズもんじゃ</span><span class="item-price">1,410円<span class="tax-included">(1,551円)</span></span></div>
+            <div class="menu-item"><span class="item-name">MIXもんじゃ<div class="note-text">豚・牛・コーン</div></span><span class="item-price">1,560円<span class="tax-included">(1,716円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ほうれん草もんじゃ<div class="note-text">ベーコン・チーズ・バター</div></span><span class="item-price">1,580円<span class="tax-included">(1,738円)</span></span></div>
+            <div class="menu-item"><span class="item-name">もち明太子チーズもんじゃ</span><span class="item-price">1,580円<span class="tax-included">(1,738円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ごきらくもんじゃ<div class="note-text">タコ・アサリ・切イカ・生イカ</div></span><span class="item-price">1,580円<span class="tax-included">(1,738円)</span></span></div>
+            <div class="menu-item"><span class="item-name">海鮮リゾットもんじゃ<div class="note-text">エビ・イカ・タコ・チーズ・バター・ライス</div></span><span class="item-price">1,760円<span class="tax-included">(1,936円)</span></span></div>
+            <div class="menu-item"><span class="item-name">地中海リゾットもんじゃ<div class="note-text">トマト・ツナ・レモン・チーズ・バター・ライス</div></span><span class="item-price">1,760円<span class="tax-included">(1,936円)</span></span></div>
+            <div class="menu-item"><span class="item-name">キノコとベーコンの白ワインリゾットもんじゃ</span><span class="item-price">1,760円<span class="tax-included">(1,936円)</span></span></div>
+            <div class="menu-item"><span class="item-name">グリーンカレーリゾットもんじゃ</span><span class="item-price">1,760円<span class="tax-included">(1,936円)</span></span></div>
+            <div class="menu-item"><span class="item-name">レッドカレーリゾットもんじゃ</span><span class="item-price">1,760円<span class="tax-included">(1,936円)</span></span></div>
+        </div>
+
+        <!-- 3. 鉄板焼き・焼きそば・ご飯 -->
+        <div class="category-title">鉄板焼き・焼きそば・お食事</div>
+        <div class="menu-list">
+            <div class="menu-item"><span class="item-name">アスパラバター</span><span class="item-price">590円<span class="tax-included">(649円)</span></span></div>
+            <div class="menu-item"><span class="item-name">エリンギガーリック</span><span class="item-price">650円<span class="tax-included">(715円)</span></span></div>
+            <div class="menu-item"><span class="item-name">さつまいもバター</span><span class="item-price">690円<span class="tax-included">(759円)</span></span></div>
+            <div class="menu-item"><span class="item-name">野菜盛</span><span class="item-price">830円<span class="tax-included">(913円)</span></span></div>
+            <div class="menu-item"><span class="item-name">はんぺんバター／イカゲソバター</span><span class="item-price">各 810円<span class="tax-included">(各 891円)</span></span></div>
+            <div class="menu-item"><span class="item-name">コーンじゃがバター</span><span class="item-price">850円<span class="tax-included">(935円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ベーコンじゃがバター</span><span class="item-price">880円<span class="tax-included">(968円)</span></span></div>
+            <div class="menu-item"><span class="item-name">きのこバター</span><span class="item-price">920円<span class="tax-included">(1,012円)</span></span></div>
+            <div class="menu-item"><span class="item-name">はんぺんチーズ</span><span class="item-price">950円<span class="tax-included">(1,045円)</span></span></div>
+            <div class="menu-item"><span class="item-name">鶏ももバター</span><span class="item-price">980円<span class="tax-included">(1,078円)</span></span></div>
+            <div class="menu-item"><span class="item-name">鶏ももバターガーリック／豚キムチ／豚カルビ／豚ロースバター</span><span class="item-price">各 1,080円<span class="tax-included">(各 1,188円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ごきらくウインナー／ごきらくチョリソー</span><span class="item-price">各 1,080円<span class="tax-included">(各 1,188円)</span></span></div>
+            <div class="menu-item"><span class="item-name">生イカバター／ホタテバター／生かきバター (冬限定)</span><span class="item-price">各 1,230円<span class="tax-included">(各 1,353円)</span></span></div>
+            <div class="menu-item"><span class="item-name">貝柱バター／特選和牛カルビ</span><span class="item-price">各 1,360円<span class="tax-included">(各 1,496円)</span></span></div>
+            <div class="menu-item"><span class="item-name">黒毛和牛ヒレステーキ／黒毛和牛サーロインステーキ</span><span class="item-price">時価(店員にお尋ねください)</span></span></div>
+            <div class="menu-item"><span class="item-name">焼きそば／焼きうどん</span><span class="item-price">各 980円<span class="tax-included">(各 1,078円)</span></span></div>
+            <div class="menu-item"><span class="item-name">カレー焼きそば</span><span class="item-price">990円<span class="tax-included">(1,089円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ピリモツ焼きそば</span><span class="item-price">1,280円<span class="tax-included">(1,408円)</span></span></div>
+            <div class="menu-item"><span class="item-name">海鮮焼きそば／海鮮塩焼きそば</span><span class="item-price">各 1,560円<span class="tax-included">(各 1,716円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ライス</span><span class="item-price">280円<span class="tax-included">(308円)</span></span></div>
+            <div class="menu-item"><span class="item-name">キムチチャーハン</span><span class="item-price">960円<span class="tax-included">(1,056円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ガーリックチャーハン</span><span class="item-price">1,010円<span class="tax-included">(1,111円)</span></span></div>
+            <div class="menu-item"><span class="item-name">エビチャーハン (玉子付き)／そばチャーハン</span><span class="item-price">各 1,090円<span class="tax-included">(各 1,199円)</span></span></div>
+            <div class="menu-item"><span class="item-name">玉子／マヨネーズ</span><span class="item-price">各 100円<span class="tax-included">(各 110円)</span></span></div>
+        </div>
+
+        <!-- 4. おつまみ・サラダ -->
+        <div class="category-title">おつまみ・サラダ</div>
+        <div class="menu-list">
+            <div class="menu-item"><span class="item-name">お新香／板わさ</span><span class="item-price">各 480円<span class="tax-included">(各 528円)</span></span></div>
+            <div class="menu-item"><span class="item-name">もろきゅう／イカ塩辛／梅タタキ／もずく酢</span><span class="item-price">各 490円<span class="tax-included">(各 539円)</span></span></div>
+            <div class="menu-item"><span class="item-name">冷奴／しらすおろし／冷トマト／ニンニクオイル</span><span class="item-price">各 530円<span class="tax-included">(各 583円)</span></span></div>
+            <div class="menu-item"><span class="item-name">枝豆</span><span class="item-price">540円<span class="tax-included">(594円)</span></span></div>
+            <div class="menu-item"><span class="item-name">キムチ</span><span class="item-price">560円<span class="tax-included">(616円)</span></span></div>
+            <div class="menu-item"><span class="item-name">牛すじ煮込／ピリ辛もつ焼／ナスとピーマンの辛味噌炒め</span><span class="item-price">各 650円<span class="tax-included">(各 715円)</span></span></div>
+            <div class="menu-item"><span class="item-name">チャンジャ</span><span class="item-price">660円<span class="tax-included">(726円)</span></span></div>
+            <div class="menu-item"><span class="item-name">タコチャンジャ</span><span class="item-price">670円<span class="tax-included">(737円)</span></span></div>
+            <div class="menu-item"><span class="item-name">エビマヨ／タコキムチ</span><span class="item-price">各 680円<span class="tax-included">(各 748円)</span></span></div>
+            <div class="menu-item"><span class="item-name">エビのガーリック炒め</span><span class="item-price">690円<span class="tax-included">(759円)</span></span></div>
+            <div class="menu-item"><span class="item-name">明太子／豆腐ツナ</span><span class="item-price">各 710円<span class="tax-included">(各 781円)</span></span></div>
+            <div class="menu-item"><span class="item-name">水菜とカリカリベーコンサラダ</span><span class="item-price">660円<span class="tax-included">(726円)</span></span></div>
+            <div class="menu-item"><span class="item-name">大根サラダ／ツナサラダ／シーザーサラダ</span><span class="item-price">各 720円<span class="tax-included">(各 792円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ほうれん草サラダ</span><span class="item-price">870円<span class="tax-included">(957円)</span></span></div>
+            <div class="menu-item"><span class="item-name">じゃこサラダ／豆腐とワカメサラダ</span><span class="item-price">各 990円<span class="tax-included">(各 1,089円)</span></span></div>
+            <div class="menu-item"><span class="item-name">豚しゃぶサラダ</span><span class="item-price">1,090円<span class="tax-included">(1,199円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ごきらくサラダ<div class="note-text">炒めたナス・ししとう・大和芋</div></span><span class="item-price">1,390円<span class="tax-included">(1,529円)</span></span></div>
+        </div>
+
+        <!-- 5. デザート -->
+        <div class="category-title">デザート</div>
+        <div class="menu-list">
+            <div class="menu-item"><span class="item-name">バニラアイス</span><span class="item-price">380円<span class="tax-included">(418円)</span></span></div>
+            <div class="menu-item"><span class="item-name">チョコかけアイス／黒みつアイス</span><span class="item-price">各 410円<span class="tax-included">(各 451円)</span></span></div>
+            <div class="menu-item"><span class="item-name">お好み焼き屋のあんこ巻／杏巻／チョコレート巻</span><span class="item-price">各 790円<span class="tax-included">(各 869円)</span></span></div>
+            <div class="menu-item"><span class="item-name">あんみつ</span><span class="item-price">680円<span class="tax-included">(748円)</span></span></div>
+            <div class="menu-item"><span class="item-name">クリームあんみつ</span><span class="item-price">860円<span class="tax-included">(946円)</span></span></div>
+        </div>
+
+        <!-- 6. ドリンク -->
+        <div class="category-title">お飲みもの・ボトル</div>
+        <div class="menu-list">
+            <div class="menu-item"><span class="item-name">生ビール (グラス)</span><span class="item-price">600円<span class="tax-included">(660円)</span></span></div>
+            <div class="menu-item"><span class="item-name">生ビール (中)</span><span class="item-price">760円<span class="tax-included">(836円)</span></span></div>
+            <div class="menu-item"><span class="item-name">アサヒスーパードライ／エビスビール／サッポロ赤ラベル (各種中瓶)</span><span class="item-price">780円〜810円<span class="tax-included">(858円〜891円)</span></span></div>
+            <div class="menu-item"><span class="item-name">プレミアムモルツ (中瓶)</span><span class="item-price">830円<span class="tax-included">(913円)</span></span></div>
+            <div class="menu-item"><span class="item-name">アサヒドライゼロ (ノンアルコール)</span><span class="item-price">620円<span class="tax-included">(682円)</span></span></div>
+            <div class="menu-item"><span class="item-name">サワー各種<div class="note-text">チューハイ／ウメ／レモン／青リンゴ／カルピス／ブルー／ライム／シークァーサー</div></span><span class="item-price">各 670円<span class="tax-included">(各 737円)</span></span></div>
+            <div class="menu-item"><span class="item-name">生絞りサワー (レモン／オレンジ)</span><span class="item-price">各 680円<span class="tax-included">(各 748円)</span></span></div>
+            <div class="menu-item"><span class="item-name">生絞りグレープフルーツサワー</span><span class="item-price">700円<span class="tax-included">(770円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ラムネサワー／クリームソーダハイ</span><span class="item-price">730円 / 760円<span class="tax-included">(803円 / 836円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ウーロンハイ／緑茶ハイ／ジャスミンハイ／梅酒</span><span class="item-price">各 720円<span class="tax-included">(各 792円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ハイボール各種<div class="note-text">トリス／ブラックニッカ (560円) ・ ジムビーム (620円) ・ 角 (700)円</div></span><span class="item-price">560円〜<span class="tax-included">(616円〜)</span></span></div>
+            <div class="menu-item"><span class="item-name">コークハイ／ジンジャーハイ／サントリーリザーブ／バーボンターキー8年</span><span class="item-price">各 740円<span class="tax-included">(各 814円)</span></span></div>
+            <div class="menu-item"><span class="item-name">果実酒ソーダ割 (杏／梅酒／桃／ライチ／ゆずレモンはちみつ)／ジントニック／カシス</span><span class="item-price">670円〜<span class="tax-included">(737円〜)</span></span></div>
+            <div class="menu-item"><span class="item-name">日本酒 松竹梅 (一合／二合)</span><span class="item-price">620円 / 1,080円<span class="tax-included">(682円 / 1,188円)</span></span></div>
+            <div class="menu-item"><span class="item-name">冷酒 菊水辛口</span><span class="item-price">1,120円<span class="tax-included">(1,232円)</span></span></div>
+            <div class="menu-item"><span class="item-name">本格焼酎 グラス各種<div class="note-text">黒霧島・白霧島・黒伊佐錦・いいちこ (700円) ／ 二階堂・赤霧島・鍛高譚・泡盛・吉四六 (720円〜)</div></span><span class="item-price">700円〜<span class="tax-included">(770円〜)</span></span></div>
+            <div class="menu-item"><span class="item-name">ボトル各種<div class="note-text">ジンロ (3,000円) ・ いいちこ／黒霧島 (3,900円) ・ 黒伊佐錦／吉四六 (4,700円〜)</div></span><span class="item-price">3,000円〜<span class="tax-included">(3,300円〜)</span></span></div>
+            <div class="menu-item"><span class="item-name">マッコリ (グラス／ボトル)</span><span class="item-price">500円 / 2,600円<span class="tax-included">(550円 / 2,860円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ソフトドリンク各種<div class="note-text">ウーロン茶／玉露茶／ジャスミン茶／カルピス／コーヒー／ミネラルウォーター</div></span><span class="item-price">各 390円<span class="tax-included">(各 429円)</span></span></div>
+            <div class="menu-item"><span class="item-name">ラムネ／炭酸水／バヤリースオレンジ／ジンジャーエール／こどもビール</span><span class="item-price">480円〜560円<span class="tax-included">(528円〜616円)</span></span></div>
+            <div class="menu-item"><span class="item-name">コーラ (瓶)／クリームソーダ</span><span class="item-price">600円 / 590円<span class="tax-included">(660円 / 649円)</span></span></div>
+            <div class="menu-item"><span class="item-name">各種セット (ロック・お湯割 250円 ／ 炭酸・ウーロン・緑茶等 580円〜600円)</span><span class="item-price">250円〜<span class="tax-included">(275円〜)</span></span></div>
+            <div class="menu-item"><span class="item-name">梅干し／高級梅干し</span><span class="item-price">160円 / 270円<span class="tax-included">(176円 / 297円)</span></span></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 ごきらく亭 All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
