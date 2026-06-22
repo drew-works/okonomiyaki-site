@@ -3,7 +3,7 @@
 私がアルバイトをしている実際の店舗（お好み焼き・もんじゃ焼き店「ごきらく亭」）のオーナーからヒアリングを行い、実用性を重視して制作した公式ホームページです。
 
 ## 🔗 サイトURL
-https://drew-works.github.io/okonomiyaki-order/HP/
+https://drew-works.github.io/okonomiyaki-site/HP/
 
 ## ✨ 本プロジェクトにおけるこだわり・開発プロセス
 
